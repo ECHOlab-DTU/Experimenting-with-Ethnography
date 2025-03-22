@@ -45,9 +45,33 @@
             text-align: left;
             margin-bottom: 4rem;
         }
-        .logo {
-            max-width: 300px;
+        @font-face {
+            font-family: 'Monotype Grotesque';
+            src: url('assets/fonts/MonotypeGrotesqueStdDispBoldCond.woff2') format('woff2'),
+                 url('assets/fonts/MonotypeGrotesqueStdDispBoldCond.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        .logo-text {
             margin-bottom: 1rem;
+            display: block;
+            font-family: 'Monotype Grotesque', 'Arial Narrow', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            line-height: 1;
+            letter-spacing: 0.02em;
+        }
+        
+        .logo-experimenting {
+            color: #000000;
+            display: block;
+        }
+        
+        .logo-with-ethnography {
+            color: #BF1C8C;
             display: block;
         }
         .grid-container {
@@ -172,12 +196,14 @@
     <div class="background-container"></div>
     <div class="overlay"></div>
     <header class="header">
-        <img src="assets/images/logo-experimenting.jpg" alt="Echolab Logo" class="logo">
+        <div class="logo-text">
+            <span class="logo-experimenting">EXPERIMENTING</span>
+            <span class="logo-with-ethnography">WITH ETHNOGRAPHY</span>
+        </div>
     </header>
-
     <div class="grid-container">
 
-                        <!-- Project 7 -->
+                        <!-- Project 1 -->
         <div class="project-card">
             <img src="assets/images/Synthethic-I-JohanSoltoft.png" alt="Project 7" class="project-image">
             <div class="project-info">
