@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimenting with Ethnography</title>
+    <title>Echolab Projects</title>
     <style>
         * {
             margin: 0;
@@ -41,10 +41,7 @@
             min-height: 100vh;
             color: #FDDB1B;
         }
-        .header {
-            text-align: left;
-            margin-bottom: 4rem;
-        }
+        
         @font-face {
             font-family: 'Monotype Grotesque';
             src: url('assets/fonts/MonotypeGrotesqueStdDispBoldCond.woff2') format('woff2'),
@@ -52,6 +49,14 @@
             font-weight: bold;
             font-style: normal;
             font-display: swap;
+        }
+        
+        .header {
+            text-align: left;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .logo-text {
@@ -74,6 +79,20 @@
             color: #BF1C8C;
             display: block;
         }
+        
+        .partner-logos {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: auto;
+            padding-right: 10px;
+        }
+        
+        .partner-logo {
+            height: 45px;
+            width: auto;
+        }
+        
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -186,6 +205,15 @@
                 padding: 1rem;
             }
             
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .partner-logos {
+                margin-top: 20px;
+            }
+            
             .background-container {
                 background-attachment: scroll;
             }
@@ -199,6 +227,10 @@
         <div class="logo-text">
             <span class="logo-experimenting">EXPERIMENTING</span>
             <span class="logo-with-ethnography">WITH ETHNOGRAPHY</span>
+        </div>
+        <div class="partner-logos">
+            <img src="assets/images/Etno-studio-white.png" alt="Partner Logo 1" class="partner-logo">
+            <img src="assets/images/Echolab-white.png" alt="Partner Logo 2" class="partner-logo">
         </div>
     </header>
 
